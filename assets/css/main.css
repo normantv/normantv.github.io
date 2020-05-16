@@ -72,6 +72,34 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #ffffff;
+	overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	color: #000000;
+	text-align: center;
+	padding: 14px 50px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -117,7 +145,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #2a2a2a;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Open Sans", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -2833,7 +2861,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 0em 0 0.1em 0 ;
 	}
 
 		#header .logo {
