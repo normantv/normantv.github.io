@@ -45,6 +45,10 @@ body, html {
     margin-bottom: 40px;
   }
 
+  .hero-text h1 {
+    font-size: 25px;
+  }
+
   .card {
     width: 100% !important;
     margin: 40px !important;
