@@ -92,6 +92,10 @@ body, html {
 
 
 /* Social Icons */
+#mail, #linkedin, #twitter, #github, #dribbble {
+  margin: 10px;
+}
+
 #mail {
   color: black;
 }
