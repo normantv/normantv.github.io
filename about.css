@@ -1,0 +1,77 @@
+.navbar, .aboutMe, .aboutMeText, .resumeButton, .copyright {
+    font-family: 'Varela Round';
+}
+
+.aboutMe {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.responsiveImage {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutMeText {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+}
+
+/* Social Icons */
+.socialIcons {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#mail, #linkedin, #twitter, #github, #dribbble {
+    margin: 10px;
+  }
+  
+  #mail {
+    color: black;
+  }
+  
+  #linkedin {
+    color: #2867B2;
+  }
+  
+  #twitter {
+    color: #1DA1F2;
+  }
+  
+  #github {
+    color: #211F1F;
+  }
+  
+  #dribbble {
+    color: #ea4c89  ;
+  }
+
+.resumeButton {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: none;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.copyright {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 0.75em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
