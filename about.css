@@ -6,6 +6,7 @@
     margin-top: 20%;
     margin-left: 5%;
 }
+
 .responsiveImage {
     display: block;
     margin-top: 10%;
@@ -33,25 +34,25 @@
     margin: 10px;
   }
   
-  #mail {
-    color: black;
-  }
-  
-  #linkedin {
-    color: #2867B2;
-  }
-  
-  #twitter {
-    color: #1DA1F2;
-  }
-  
-  #github {
-    color: #211F1F;
-  }
-  
-  #dribbble {
-    color: #ea4c89  ;
-  }
+#mail {
+color: black;
+}
+
+#linkedin {
+color: #2867B2;
+}
+
+#twitter {
+color: #1DA1F2;
+}
+
+#github {
+color: #211F1F;
+}
+
+#dribbble {
+color: #ea4c89  ;
+}
 
 .resumeButton {
     display: block;
@@ -74,4 +75,52 @@
     font-size: 0.75em;
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    #desktopLayout {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #mobileLayout {
+        display: none;
+    }
+
+    #desktopLayout {
+        display: flex;
+        align-items: center;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .responsiveImage {
+        float: left;
+        width: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .aboutContent {
+        margin-right: 5%;
+    }
+
+    .aboutMe {
+        margin-top: 0%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+
+    .aboutMeText {
+        display: inline;
+        font-size: 1em;
+        margin-left: 0%;
+    }
+
+    .socialIcons {
+        margin-top: 5%;
+    }
 }
