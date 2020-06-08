@@ -1,0 +1,149 @@
+/* Navigation Bar */
+.navbar {
+  font-family: 'Varela Round';
+}
+
+.navbar-brand {
+  font-weight: 900;
+}
+
+/* Body  */
+body, html {
+  height: 100%;
+}
+
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.jpeg");
+
+  /* Set a specific height */
+  height: 60%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  position: absolute;
+  top: 75%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  font-family: 'Varela Round';
+  color: white;
+}
+
+/* Card */
+.card {
+  width: 18rem;
+  font-family: 'Varela Round';
+  margin: 40px;
+  margin-bottom: 40px;
+  border: none !important;
+  border-top-right-radius: calc(.75rem - 1px) !important;
+  border-top-left-radius: calc(.75rem - 1px) !important;
+  border-bottom-right-radius: calc(.75rem - 1px) !important;
+  border-bottom-left-radius: calc(.75rem - 1px) !important;
+}
+
+.card-img-top {
+  border-top-right-radius: calc(.75rem - 1px) !important;
+  border-top-left-radius: calc(.75rem - 1px) !important;
+  border-bottom-right-radius: calc(.75rem - 1px) !important;
+  border-bottom-left-radius: calc(.75rem - 1px) !important;
+}
+
+.card-title {
+  margin-bottom: 0 !important;
+}
+
+
+#DesktopFooter {
+  font-family: 'Varela Round';
+  padding-bottom: 5%;
+}
+
+#MobileFooter {
+  font-family: 'Varela Round';
+  padding-left: 11%;
+  padding-right: 11%;
+  padding-bottom: 5%;
+}
+
+  #MobileFooter h1 {
+    font-size: 1.75rem;
+  }
+
+
+
+/* Social Icons */
+#mail, #linkedin, #twitter, #github, #dribbble {
+  margin: 10px;
+}
+
+#mail {
+  color: black;
+}
+
+#linkedin {
+  color: #2867B2;
+}
+
+#twitter {
+  color: #1DA1F2;
+}
+
+#github {
+  color: #211F1F;
+}
+
+#dribbble {
+  color: #ea4c89  ;
+}
+
+/* Responsive Modifications */
+@media only screen and (max-width: 768px) {
+  .hero-image {
+    display: flex; justify-content: center;
+    height: 80%;
+    margin-bottom: 40px;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 65%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    font-family: 'Varela Round';
+    color: white;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+  }
+
+  .mobileSocialLinks {
+    padding-top: 135%;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 40px !important;
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+  }
+
+  #DesktopFooter {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #mobileSocialLinks, #MobileFooter {
+    display: none;
+  }
+}

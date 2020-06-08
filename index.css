@@ -1,117 +1,243 @@
-/* Navigation Bar */
-.navbar {
-  font-family: 'Varela Round';
+.navbar, .hero-text, .button, .card, .copyright, #MobileFooter, .footerCard {
+    font-family: 'Varela Round';
 }
-
-.navbar-brand {
-  font-weight: 900;
-}
-
-
 
 /* Body  */
 body, html {
-  height: 100%;
+    height: 100%;
 }
 
-
-
-/* The hero image */
+/* Banner Image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("images/mobile-banner.jpg");
 
-  /* Set a specific height */
-  height: 60%;
+    /* Set a specific height */
+    height: 100%;
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 10%;
 }
 
-/* Place text in the middle of the image */
 .hero-text {
-  position: absolute;
-  top: 75%;
-  left: 37%;
-  transform: translate(-50%, -50%);
-  font-family: 'Varela Round';
-  color: white;
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-@media only screen and (max-width: 800px) {
-  .hero-image {
-    margin-bottom: 40px;
-  }
-
-  .hero-text h1 {
-    font-size: 25px;
-  }
-
-  .card {
-    width: 100% !important;
-    margin: 40px !important;
-    margin-top: 0px !important;
-    margin-bottom: 30px !important;
-  }
+.hero-text h1 {
+    font-size: 1.6em;
 }
-
-
-
-/* Card */
-.card {
-  width: 18rem;
-  font-family: 'Varela Round';
-  margin: 40px;
-  margin-bottom: 40px;
-  border: none !important;
-  border-top-right-radius: calc(.75rem - 1px) !important;
-  border-top-left-radius: calc(.75rem - 1px) !important;
-  border-bottom-right-radius: calc(.75rem - 1px) !important;
-  border-bottom-left-radius: calc(.75rem - 1px) !important;
-}
-
-.card-img-top {
-  border-top-right-radius: calc(.75rem - 1px) !important;
-  border-top-left-radius: calc(.75rem - 1px) !important;
-  border-bottom-right-radius: calc(.75rem - 1px) !important;
-  border-bottom-left-radius: calc(.75rem - 1px) !important;
-}
-
-.card-title {
-  margin-bottom: 0 !important;
-}
-
-
-#footer {
-  font-family: 'Varela Round';
-  padding-bottom: 5%;
-}
-
-
 
 /* Social Icons */
-#mail, #linkedin, #twitter, #github, #dribbble {
-  margin: 10px;
+.mobileSocialLinks {
+    position: absolute;
+    top: 72.5%;
+
+    text-align: center;
+    margin-top: 5%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+
+    display: block;
 }
 
+#mail, #linkedin, #twitter, #github, #dribbble {
+    margin: 10px;
+  }
+  
 #mail {
-  color: black;
+color: black;
 }
 
 #linkedin {
-  color: #2867B2;
+color: #2867B2;
 }
 
 #twitter {
-  color: #1DA1F2;
+color: #1DA1F2;
 }
 
 #github {
-  color: #211F1F;
+color: #211F1F;
 }
 
 #dribbble {
-  color: #ea4c89  ;
+color: #ea4c89  ;
+}
+
+/* Banner Button */
+.button {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: none;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 84%;
+}
+
+/* Card */
+.card {
+    width: 18rem;
+    font-family: 'Varela Round';
+    margin: 40px;
+    margin-bottom: 40px;
+    border: none !important;
+    border-top-right-radius: calc(.75rem - 1px) !important;
+    border-top-left-radius: calc(.75rem - 1px) !important;
+    border-bottom-right-radius: calc(.75rem - 1px) !important;
+    border-bottom-left-radius: calc(.75rem - 1px) !important;
+  }
+  
+.card-img-top {
+border-top-right-radius: calc(.75rem - 1px) !important;
+border-top-left-radius: calc(.75rem - 1px) !important;
+border-bottom-right-radius: calc(.75rem - 1px) !important;
+border-bottom-left-radius: calc(.75rem - 1px) !important;
+}
+
+.card-title {
+margin-bottom: 0 !important;
+}
+
+#MobileFooter {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-bottom: 5%;
+}
+
+.footerCard {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#emailFooterCard {
+    color: black;
+    background-color: white;;
+}
+
+#linkedinFooterCard {
+    color: white;
+    background-color: #2867B2;;
+}
+
+#twitterFooterCard {
+    color: white;
+    background-color: #1DA1F2;;
+}
+
+
+#DesktopFooter {
+    font-family: 'Varela Round';
+    padding-bottom: 5%;
+}
+
+#DesktopFooter .footerCard {
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    width: 20%;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 0.75em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* All Phones */
+@media only screen and (max-width: 768px) {
+    #DesktopFooter {
+        display: none;
+    }
+
+    .card {
+        width: 100% !important;
+        margin: 40px !important;
+        margin-top: 0px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+/* Small Phones */
+@media only screen and (max-width: 360px) {
+    .hero-text h1 {
+        font-size: 1.4em;
+    }
+
+    .card {
+        margin: 20px !important;
+    }
+}
+
+/* Square Phones */
+@media only screen and (max-height: 570px) {
+    #mobileSocialLinks {
+        top: 73%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.jpeg");
+        height: 80%;
+        margin-bottom: 0%;
+    }
+
+    .hero-text {
+        top: 75%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2em;
+    }
+
+    #mobileSocialLinks {
+        display: none;
+    }    
+
+    #bannerButton {
+        display: none;
+    }    
+
+    #aboutMeMobileCard {
+        display: none;
+    }
+
+    #MobileFooter {
+        display: none;
+    }
 }

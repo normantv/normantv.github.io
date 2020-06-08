@@ -77,6 +77,14 @@ color: #ea4c89  ;
     margin-bottom: 10%;
 }
 
+@media only screen and (max-width: 400px) {
+    #desktopLayout {
+        display: none;
+    }
+
+    
+}
+
 @media only screen and (max-width: 768px) {
     #desktopLayout {
         display: none;
