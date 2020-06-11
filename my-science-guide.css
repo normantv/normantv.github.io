@@ -1,0 +1,107 @@
+.navbar, .aboutMe, .aboutMeText, .resumeButton, .copyright {
+    font-family: 'Varela Round';
+}
+
+.aboutMe {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.aboutMe, .aboutMeText h4 {
+    text-align: center;
+}
+
+.responsiveImage {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutMeText {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+}
+
+.resumeButton {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: none;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+
+.copyright {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 0.75em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 400px) {
+    #desktopLayout {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #desktopLayout {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #mobileLayout {
+        display: none;
+    }
+
+    #desktopLayout {
+        display: flex;
+        align-items: center;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .responsiveImage {
+        float: left;
+        width: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .aboutContent {
+        margin-right: 5%;
+    }
+
+    .aboutMe {
+        margin-top: 0%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+
+    .aboutMeText {
+        display: inline;
+        font-size: 1em;
+        margin-left: 0%;
+    }
+
+    .socialIcons {
+        margin-top: 5%;
+    }
+}
