@@ -1,41 +1,112 @@
-.navbar, .aboutMe, .aboutMeText, .resumeButton, .copyright {
+.navbar {
     font-family: 'Varela Round';
 }
 
-.aboutMe {
-    margin-top: 20%;
+.titleText {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
-.aboutMe, .aboutMeText h4 {
-    text-align: center;
+.sectionHeadingBig {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.sectionHeading {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.sectionText {
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .responsiveImage {
-    display: block;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    display: block;
+    width: 90%;
+}
+
+.responsiveImageFloating {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    display: block;
+    width: 90%;
     border-radius: 13px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.aboutMeText {
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1em;
+/* Container holding the image and the text */
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.bannerImage {
+    width: 100%;
+    filter: brightness(90%);
 }
 
-.resumeButton {
+/* Centered text */
+.centeredImageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.3em;
+    font-weight: bolder;
+  }
+
+  .notepad {
+    margin-left: 7%;
+    margin-right: 7%;
+    display: block;
+    width: 90%;
+    padding: 30px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .mockups {
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+
+  .profilePic {
+    margin-top: 7%;
+    margin-bottom: 2%;
+    width: 40%;
+  }
+
+  .profileText {
+    width: 170px;
+    text-align: center;
+    margin-left: -5%;
+  }
+
+.button {
     display: block;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
     border: none;
-    width: 40%;
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
@@ -52,12 +123,6 @@
     margin-bottom: 10%;
 }
 
-@media only screen and (max-width: 400px) {
-    #desktopLayout {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     #desktopLayout {
         display: none;
@@ -65,43 +130,119 @@
 }
 
 @media only screen and (min-width: 768px) {
-    #mobileLayout {
-        display: none;
-    }
+#mobileLayout {
+    display: none;
+}
 
-    #desktopLayout {
-        display: flex;
-        align-items: center;
-        margin-top: 7%;
-        margin-bottom: 7%;
-    }
+ .responsiveImage {
+     margin-top: 5%;
+     width: 70%;
+ }
 
-    .responsiveImage {
-        float: left;
-        width: 30%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
+ .titleText {
+     font-size: 3em;
+ }
 
-    .aboutContent {
-        margin-right: 5%;
-    }
+ .centeredImageText {
+     font-size: 4em;
+ }
 
-    .aboutMe {
-        margin-top: 0%;
-        margin-bottom: 5%;
-        margin-left: 0%;
-    }
+ .bannerImage {
+     width: 70%;
+ }
 
-    .aboutMeText {
-        display: inline;
-        font-size: 1em;
-        margin-left: 0%;
-    }
 
-    .socialIcons {
-        margin-top: 5%;
-    }
+ .navbar {
+    font-family: 'Varela Round';
+}
+
+
+.sectionHeadingBig {
+    font-size: 1.8em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.sectionHeading {
+    font-size: 1.8em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.sectionText {
+    font-size: 1.4em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.responsiveImageFloating {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+    width: 30%;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Container holding the image and the text */
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.notepad {
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    padding: 30px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .userPersona {
+      width: 70%;
+  }
+
+  .mockups {
+      margin-top: 2%;
+      margin-bottom: 2%;
+  }
+
+  .profilePic {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    height: 200px;
+    width: 200px;
+  }
+
+  .profileText {
+      
+      width: 20%;
+  }
+
+.button {
+    display: block;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: none;
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+.copyright {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 }
