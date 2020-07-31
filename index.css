@@ -1,4 +1,4 @@
-.navbar, .hero-text, .button, .card, .copyright, #MobileFooter, .footerCard, .sectionHeading {
+.navbar, .hero-text, .button, #desktopMemojiHeader, #mobileHeadline, .card, .copyright, #MobileFooter, .footerCard, .sectionHeading {
     font-family: 'Varela Round';
 }
 
@@ -7,33 +7,109 @@ body, html {
     height: 100%;
 }
 
-/* Banner Image */
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("images/mobile-banner.jpg");
-
-    /* Set a specific height */
+#desktopMemojiHeader {
     height: 100%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex; 
-    justify-content: center;
-    /* margin-bottom: 5%; */
-}
-
-.hero-text {
-    position: absolute;
-    top: 60%;
-    left: 37%;
-    transform: translate(-50%, -50%);
     color: white;
+    background: #494949;
+    background: -webkit-radial-gradient(center, #494949, #000000);
+    background: -moz-radial-gradient(center, #494949, #000000);
+    background: radial-gradient(ellipse at center, #494949, #000000);
+    text-align: center;
+    padding-top: 10%;
 }
 
-.hero-text h1 {
-    font-size: 1.6em;
+#desktopMemojiHeader h1 {
+    font-size: 4em;
+}
+
+#desktopMemojiHeader h5 {
+    font-size: 1.8em;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#memojiHeaderImage {
+    margin-top: 2%;
+    width: 80%;
+}
+
+#mobileMemojiHeader {
+    height: 100%;
+    background-color: black;
+}
+
+#memojiVideo {
+    width: 100%;
+    padding-top: 25%;
+}
+
+#mobileHeadline {
+    text-align: center; 
+    color: white;
+    padding-top: 10%;
+}
+
+#mobileHeadline h1 {
+    font-size: 2.5em;
+}
+
+#mobileHeadline h5 {
+    font-size: 1.4em;
+}
+
+#mobileSocialLinks {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+
+#mail, #linkedin, #twitter, #github, #dribbble {
+    margin: 8px;
+}
+  
+#mail {
+color: black;
+}
+
+#linkedin {
+color: #2867B2;
+}
+
+#twitter {
+color: #1DA1F2;
+}
+
+#github {
+color: #211F1F;
+}
+
+#dribbble {
+color: #ea4c89  ;
+}
+
+/* Banner Button */
+.button {
+    display: block;
+    position: relative;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: none;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: black;
+    background-color: white;
 }
 
 /* About Me Sections */
@@ -91,65 +167,6 @@ body, html {
     color: white;
 }
 
-/* Social Icons */
-.mobileSocialLinks {
-    position: absolute;
-    top: 72.5%;
-
-    text-align: center;
-    margin-top: 5%;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    background-color: white;
-
-    display: block;
-}
-
-#mail, #linkedin, #twitter, #github, #dribbble {
-    margin: 10px;
-  }
-  
-#mail {
-color: black;
-}
-
-#linkedin {
-color: #2867B2;
-}
-
-#twitter {
-color: #1DA1F2;
-}
-
-#github {
-color: #211F1F;
-}
-
-#dribbble {
-color: #ea4c89  ;
-}
-
-/* Banner Button */
-.button {
-    display: block;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
-    border: none;
-    width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    text-align: center;
-    color: white;
-    background-color: black;
-    position: absolute;
-    top: 84%;
-}
 
 /* Card */
 .card {
@@ -259,8 +276,17 @@ margin-bottom: 0 !important;
     background-color: #001F5B;
 }
 
+
+
+
+
+
 /* All Phones */
 @media only screen and (max-width: 768px) {
+    #desktopMemojiHeader {
+        display: none;
+    }
+
     #DesktopFooter {
         display: none;
     }
@@ -277,11 +303,41 @@ margin-bottom: 0 !important;
     }
 }
 
+
+
+
+
+
 /* Small Phones */
 @media only screen and (max-width: 360px) {
-    .hero-text h1 {
-        font-size: 1.4em;
+    #mobileHeadline {
+        padding-top: 5%;
     }
+    
+    #mobileHeadline h1 {
+        font-size: 2.0em;
+    }
+    
+    #mobileHeadline h5 {
+        font-size: 1.2em;
+    }
+    
+    #mobileSocialLinks {
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 12px;
+        background-color: white;
+    }
+    
+    
+    #mail, #linkedin, #twitter, #github, #dribbble {
+        margin: 8px;
+    }
+
 
     .card {
         margin: 20px !important;
@@ -290,25 +346,18 @@ margin-bottom: 0 !important;
 
 /* Square Phones */
 @media only screen and (max-height: 570px) {
-    #mobileSocialLinks {
-        top: 73%;
-    }
 }
+
+
+
+
+
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
-    .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner.jpeg");
-        height: 80%;
-        /* margin-bottom: 0%; */
-    }
 
-    .hero-text {
-        top: 75%;
-    }
-
-    .hero-text h1 {
-        font-size: 2.2em;
+    #mobileMemojiHeader {
+        display: none;
     }
 
     .sectionHeading {
@@ -339,8 +388,6 @@ margin-bottom: 0 !important;
     #aboutMeMobileCard {
         display: none;
     }
-
-
 
     #MobileFooter {
         
