@@ -344,14 +344,12 @@ margin-bottom: 0 !important;
     }
 }
 
-/* Square Phones */
-@media only screen and (max-height: 570px) {
+
+@media only screen and (max-width: 900px) and (orientation : landscape) {
+    #desktopMemojiHeader {
+        padding-bottom: 450px;
+    }
 }
-
-
-
-
-
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
