@@ -168,6 +168,53 @@ color: #ea4c89  ;
 }
 
 
+.rectangle {
+    float: left;
+    /* position: relative; */
+    width: 80%;
+    padding-bottom: 2%;
+    margin: 1.66%;
+
+    overflow: hidden;
+
+    border: none !important;
+    border-top-right-radius: calc(.75rem - 1px) !important;
+    border-top-left-radius: calc(.75rem - 1px) !important;
+    border-bottom-right-radius: calc(.75rem - 1px) !important;
+    border-bottom-left-radius: calc(.75rem - 1px) !important;
+}
+
+.rectangleIcon {
+    /* position: absolute; */
+    height: 80px;
+    width: 80px;
+
+    text-align: center;
+    align-items: center;
+
+    font-size: 3em;
+
+    padding: 5px 0;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+
+    border: none !important;
+    border-top-right-radius: calc(.75rem - 1px) !important;
+    border-top-left-radius: calc(.75rem - 1px) !important;
+    border-bottom-right-radius: calc(.75rem - 1px) !important;
+    border-bottom-left-radius: calc(.75rem - 1px) !important;
+}
+
+.rectangleContent {
+    /* position: absolute; */
+    height: 80%; /* = 100% - 2*10% padding */
+    width: 100%; /* = 100% - 2*5% padding */
+    padding: 3%;
+    font-size: 1.2em;
+}
+
+
 /* Card */
 .card {
     width: 18rem;
@@ -371,6 +418,27 @@ margin-bottom: 0 !important;
         margin: 1.66%;
     }
 
+    .rectangle {
+        width: 45%;
+        /* padding-bottom: 0%; = width for a 1:1 aspect ratio */
+        margin: 1.66%;
+    }
+
+    .rectangleIcon {
+        height: 100px;
+        width: 100px;
+        font-size: 3.5em;
+
+        padding: 8px 0;
+        margin-left: 2%;
+    }
+
+        .rectangleContent {
+            padding-bottom: 0%;
+            font-size: 1.5em;
+        }
+        
+
     #mobileSquare1, #mobileSquare2 {
         display: none;
     }
@@ -392,3 +460,8 @@ margin-bottom: 0 !important;
         display: none;
     }
 }
+
+@media only screen and (min-width: 1600px) {
+    #desktopMemojiHeader {
+        height: 70%;
+    }
