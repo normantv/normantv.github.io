@@ -246,3 +246,7 @@
     margin-bottom: 5%;
 }
 }
+
+.carousel-inner {
+    font-family: 'Varela Round';
+}
