@@ -10,10 +10,11 @@ body, html {
 #desktopMemojiHeader {
     height: 100%;
     color: white;
-    background: #494949;
-    background: -webkit-radial-gradient(center, #494949, #000000);
-    background: -moz-radial-gradient(center, #494949, #000000);
-    background: radial-gradient(ellipse at center, #494949, #000000);
+    background: black;
+    /* background: #494949; */
+    background: -webkit-radial-gradient(center, #292929, #000000);
+    background: -moz-radial-gradient(center, #292929, #000000);
+    background: radial-gradient(ellipse at center, #292929, #000000);
     text-align: center;
     padding-top: 10%;
 }
